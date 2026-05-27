@@ -2,13 +2,17 @@
 
 
 
-Description:
-
-\---------------------------------------------
 
 
 
-This project is built entirely within my custom C++ game engine and focuses on creating a real-time, procedurally generated underwater world. Terrain is generated using layered noise and converted into 3D geometry, enabling complex natural features to emerge.
+
+#### **Description:**
+
+\---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+This project is my Master's Thesis during my time at SMU Guildhall. The artifact is built entirely within my custom C++ game engine and focuses on creating a real-time, procedurally generated underwater world. Terrain is generated using layered noise and converted into 3D geometry, enabling complex natural features to emerge.
 
 
 
@@ -18,15 +22,19 @@ The world streams dynamically through a chunk-based, multithreaded system, allow
 
 An in-engine ImGui editor exposes all major parameters for real-time editing and iteration.
 
+For a more in-depth explanation of how I created all of the systems, please visit my portfolio [Underwater Environments](https://www.macraesmith.com/projects/thesis).
 
 
 
 
-Instructions:
 
-\---------------------------------------------
 
-Open up the ThesisArtifact\_Release\_x64.exe file in the Run folder to launch the game
+
+#### **Run Instructions**
+
+\---------------------------------------------------------------------------------------------------------------------------------
+
+Open up the ThesisArtifact\_Release\_x64.exe file in the ThesisArtifact/Run folder to launch the game
 
 
 
@@ -40,9 +48,15 @@ Open the ThesisArtifact Solution in Visual Studio 2022 and press ctrl + shift + 
 
 
 
-Keyboard Controls:
 
-\----------------Navigation------------------
+
+#### **Controls**
+
+\---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+\----------------**Navigation**------------------
 
 \[SPACE]			Enter Artifact
 
@@ -54,7 +68,7 @@ Keyboard Controls:
 
 
 
-\-------------------Debug--------------------
+\-------------------**Debug**--------------------
 
 
 
@@ -108,7 +122,7 @@ Keyboard Controls:
 
 
 
-\-----------------Movement--------------------
+\-----------------**Movement**--------------------
 
 
 
@@ -130,9 +144,13 @@ Keyboard Controls:
 
 
 
-ImGui Main Features by Tab:
+#### **ImGui Main Features by Tab:**
 
-\---------------Load Worlds-------------------
+\---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+\---------------**Load Worlds**-------------------
 
 Handles world state management.
 
@@ -152,7 +170,7 @@ This tab is the entry point for applying changes made elsewhere in the editor.
 
 
 
-\-----------------Terrain---------------------
+\-----------------**Terrain**---------------------
 
 Controls procedural terrain generation.
 
@@ -174,7 +192,7 @@ Changes here affect the structure and visual composition of the world geometry.
 
 
 
-\-------------Water And Wind------------------
+\-------------**Water And Wind**------------------
 
 Controls ocean and current behavior.
 
@@ -194,7 +212,7 @@ This section defines both visual water appearance and environmental motion.
 
 
 
-\-------------Lightning and Fog---------------
+\-------------**Lightning and Fog**---------------
 
 Controls overall scene lighting and atmospheric effects.
 
@@ -218,7 +236,7 @@ These settings strongly influence mood, visibility, and realism.
 
 
 
-\----------------Vegetation------------------
+\----------------**Vegetation**------------------
 
 Controls procedural placement and appearance of plant life.
 
@@ -240,7 +258,7 @@ This system determines how life populates the terrain.
 
 
 
-\-------------------Fish---------------------
+\-------------------**Fish**---------------------
 
 Controls AI and spawning behavior for aquatic life.
 
@@ -266,7 +284,7 @@ This tab governs dynamic ecosystem behavior.
 
 
 
-\---------------Debug Render-----------------
+\---------------**Debug Render**-----------------
 
 Provides visualization tools for rendering diagnostics.
 
