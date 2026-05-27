@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Framework\Shaders">
+      <UniqueIdentifier>{a28afb81-1aa2-4911-8651-5768f3cbd92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Entities">
+      <UniqueIdentifier>{c59ea781-d3d5-487b-b49b-d6b7d3016a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\World">
+      <UniqueIdentifier>{363f8744-49d5-4287-a256-2d733107258b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utils">
+      <UniqueIdentifier>{048389ec-0679-4475-8722-a3f5382bdad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\XML">
+      <UniqueIdentifier>{6086c144-a86f-4082-ab86-8c3593f74ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Shaders\Utils">
+      <UniqueIdentifier>{238bf7e3-97ff-4784-8f65-9e6ef3c9f9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\XML\FishModels">
+      <UniqueIdentifier>{d9a1b735-077c-4aeb-98c1-fddf7738c60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\XML\SkyBox">
+      <UniqueIdentifier>{0129b799-fa38-4c13-82e7-01da4b2387f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Shaders\Vegetation">
+      <UniqueIdentifier>{7b3ab64f-27ea-404d-9868-5bf7330c343e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Shaders\Reference">
+      <UniqueIdentifier>{d4ea6efd-504f-4980-bc8c-929ad23cf01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Shaders\Terrain/Water/Fish/Sky">
+      <UniqueIdentifier>{ce8cd822-b746-47d9-88bc-162b9324c0be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Shaders\Lighting/Fog">
+      <UniqueIdentifier>{b733f07a-64ea-4768-8658-ba7aba148161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\XML\Coral">
+      <UniqueIdentifier>{5aad3f8b-a8be-4a11-84fd-d6fc876a25a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Windows.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Framework\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Framework\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Chunk.cpp">
+      <Filter>Framework\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Framework\World</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainUtils.cpp">
+      <Filter>Framework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxel.cpp">
+      <Filter>Framework\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDefinition.cpp">
+      <Filter>Framework\World</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelIterator.cpp">
+      <Filter>Framework\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Fish.cpp">
+      <Filter>Framework\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldUtils.cpp">
+      <Filter>Framework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="BiomeUtils.cpp">
+      <Filter>Framework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="VegetationUtils.cpp">
+      <Filter>Framework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NoiseUtils.cpp">
+      <Filter>Framework\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Framework\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Framework\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunk.hpp">
+      <Filter>Framework\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Framework\World</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainUtils.hpp">
+      <Filter>Framework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxel.hpp">
+      <Filter>Framework\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDefinition.hpp">
+      <Filter>Framework\World</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelIterator.hpp">
+      <Filter>Framework\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Fish.hpp">
+      <Filter>Framework\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldUtils.hpp">
+      <Filter>Framework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="BiomeUtils.hpp">
+      <Filter>Framework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="VegetationUtils.hpp">
+      <Filter>Framework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="NoiseUtils.hpp">
+      <Filter>Framework\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\Run\Data\Shaders\SeaAnenome.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\SeaAnenomeCompute.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\SeaGrass.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\SeaGrassCompute.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Fish.hlsl">
+      <Filter>Framework\Shaders\Terrain/Water/Fish/Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Terrain.hlsl">
+      <Filter>Framework\Shaders\Terrain/Water/Fish/Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\WaterSurface.hlsl">
+      <Filter>Framework\Shaders\Terrain/Water/Fish/Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Diffuse_DX12.hlsl">
+      <Filter>Framework\Shaders\Reference</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\SkyBox.hlsl">
+      <Filter>Framework\Shaders\Terrain/Water/Fish/Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Fog_PostProcess.hlsl">
+      <Filter>Framework\Shaders\Lighting/Fog</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Compute_Test_Grass.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Compute_LightRayVolume.hlsl">
+      <Filter>Framework\Shaders\Lighting/Fog</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\LightRayMask_PostProcess.hlsl">
+      <Filter>Framework\Shaders\Lighting/Fog</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\BlinnPhong_DX12.hlsl">
+      <Filter>Framework\Shaders\Reference</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\SunBlur.hlsl">
+      <Filter>Framework\Shaders\Terrain/Water/Fish/Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Coral.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Compute_Coral.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\CoralBlend_PostProcess.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\Kelp.hlsl">
+      <Filter>Framework\Shaders\Vegetation</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\SlideShow.hlsl">
+      <Filter>Framework\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\Run\Data\Definitions\GameConfig.xml">
+      <Filter>Framework\XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Definitions\WorldDefinitions\DefaultWorld.xml">
+      <Filter>Framework\XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\AngelFish\AngelFish.xml">
+      <Filter>Framework\XML\FishModels</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Images\Skyboxes\BlueSkyBox\BlueSkyBox.xml">
+      <Filter>Framework\XML\SkyBox</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\FolioseCoral\FolioseCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\ElkhornCoral\ElkhornCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\LettuceCoral\LettuceCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\TubeSpongeCoral\TubeSpongeCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\SeaFanCoral\SeaFanCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\BranchingCoral\BranchingCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Models\Coral\BrainCoral\BrainCoral.xml">
+      <Filter>Framework\XML\Coral</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Run\Data\Shaders\Utils\CommonUtils.hlsli">
+      <Filter>Framework\Shaders\Utils</Filter>
+    </None>
+    <None Include="..\..\Run\Data\Shaders\Utils\UnderwaterLightingUtils.hlsli">
+      <Filter>Framework\Shaders\Utils</Filter>
+    </None>
+    <None Include="..\..\Run\Data\Shaders\Utils\TextureUtils.hlsli">
+      <Filter>Framework\Shaders\Utils</Filter>
+    </None>
+    <None Include="..\..\Run\Data\Shaders\Utils\VegetationUtils.hlsli">
+      <Filter>Framework\Shaders\Utils</Filter>
+    </None>
+  </ItemGroup>
+</Project>

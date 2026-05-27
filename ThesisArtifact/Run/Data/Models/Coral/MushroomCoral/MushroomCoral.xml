@@ -1,0 +1,17 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap,specularMap, emissiveMap"
+	objFile ="Data/Models/Coral/MushroomCoral/Coral_Mushroom.obj"
+	diffuseMap = "Data/Models/Coral/Textures/Corals_2_7_10_12_diff.png"
+	normalMap = "Data/Models/Coral/Textures/Corals_2_7_10_12_normal.png"
+	specularMap ="Data/Models/Coral/Textures/Corals_2_7_10_12_gloss.png"
+	emissiveMap ="Data/Models/Coral/Textures/Corals_2_7_10_12_illum.png"
+	shader = "Data/Shaders/Coral"
+	unitsPerMeter = "20" 
+	x="forward"
+	y="left"
+	z="up"
+	translation = "0,0,0"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	

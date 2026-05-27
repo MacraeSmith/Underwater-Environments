@@ -1,0 +1,15 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap"
+	objFile ="Data/Models/AngelFish/AngelFish.obj"
+	diffuseMap = "Data/Models/AngelFish/AngelFish_Diffuse.png"
+	normalMap = "Data/Models/AngelFish/AngelFish_Normal.png"
+	shader = "Data/Shaders/Fish"
+	unitsPerMeter = "0.25" 
+	x="left"
+	y="backward"
+	z="up"
+	translation = "0,0,0"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	

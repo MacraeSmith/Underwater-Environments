@@ -1,0 +1,11 @@
+<SkyBox
+	Shader="Data/Shaders/SkyBox"
+	ParentFolder="Data/Images/Skyboxes/BlueSkyBox/"
+	XFace="CubeMapNegXSkyBox.png"
+	YFace="CubeMapYSkyBox.png"
+	ZFace="CubeMapZSkyBox.png"
+	NegXFace="CubeMapXSkyBox.png"
+	NegYFace="CubeMapNegYSkyBox.png"
+	NegZFace="CubeMapNegZSkyBox.png"
+/>
+

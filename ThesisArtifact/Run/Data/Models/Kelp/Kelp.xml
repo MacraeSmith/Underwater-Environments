@@ -1,0 +1,17 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap,specularMap, emissiveMap"
+	objFile ="Data/Models/Kelp/Kelp.obj"
+	diffuseMap = "Data/Models/Coral/Textures/Corals_3_6_diff_V2.png"
+	normalMap = "Data/Models/Coral/Textures/Corals_3_6_normal_V2.png"
+	specularMap ="Data/Models/Coral/Textures/Corals_3_6_gloss_V2.png"
+	emissiveMap ="Data/Models/Coral/Textures/Corals_3_6_illum_V2.png"
+	shader = "Data/Shaders/Kelp"
+	unitsPerMeter = "1"
+	x="forward"
+	y="left"
+	z="up"
+	translation = "0,0,0"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	

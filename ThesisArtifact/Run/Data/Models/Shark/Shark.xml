@@ -1,0 +1,15 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap"
+	objFile ="Data/Models/Shark/Shark.obj"
+	diffuseMap = "Data/Models/Shark/Shark_Diffuse.png"
+	normalMap = "Data/Models/Shark/Shark_Normal.png"
+	shader = "Data/Shaders/Fish"
+	unitsPerMeter = "0.25" 
+	x="backward"
+	y="up"
+	z="left"
+	translation = "0,0,-2"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	

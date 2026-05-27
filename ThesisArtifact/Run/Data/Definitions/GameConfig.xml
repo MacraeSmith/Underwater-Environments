@@ -1,0 +1,10 @@
+<GameConfig
+	WindowAspect="2.0"
+	WindowFullscreen="true"
+	WindowScale = ".9f"
+	WindowTitle="Thesis Artifact"
+	NumWorkerThreads="40"
+	DefaultWorldFile="Data/Definitions/WorldDefinitions/DefaultWorld.xml"
+	DefaultWorldName="DefaultWorld"
+/>
+

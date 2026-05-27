@@ -1,0 +1,153 @@
+<Definitions>
+    <WorldDefinition worldName="Flat" voxelScale="5" seaLevel="638.44598" baseTerrainDepth="1" maxTerrainDepth="750" worldHeight="1000" skyboxTextureInfo="Data/Images/Skyboxes/BlueSkyBox/BlueSkyBox.xml" biomeBlend="0.5">
+        <Noise gameSeed="581" defaultOctavePersistance="0.5" defaultOctaveScale="2" warpNoiseScale="800.00, 900.00" warpNoiseNumOctaves="7" baseTerrainBiasFactor="0.55000001" finalTerrainBiasFactor="0.025">
+            <NoiseInfo name="Temperature" type="Terrain" noiseType="perlin" seed="1234" isActive="true" scale="170.5" strength="100" numOctaves="1" warpStrength="10"></NoiseInfo>
+            <NoiseInfo name="Peaks and Valleys" type="Terrain" noiseType="perlin" seed="25" isActive="false" scale="456" strength="1" numOctaves="4" warpStrength="0">
+                <Curve type="heightOffset">
+                    <PlotPoint point="-1.00, -0.50" type="linear"/>
+                    <PlotPoint point="-0.40, -0.30" type="linear"/>
+                    <PlotPoint point="0.00, 0.00" type="linear"/>
+                    <PlotPoint point="0.40, 0.25" type="linear"/>
+                    <PlotPoint point="0.80, 0.60" type="linear"/>
+                    <PlotPoint point="1.00, 0.90" type="linear"/>
+                </Curve>
+                <Curve type="squashCurve">
+                    <PlotPoint point="-1.00, 0.20" type="linear"/>
+                    <PlotPoint point="-0.50, 0.40" type="linear"/>
+                    <PlotPoint point="0.00, 0.60" type="smoothStep3"/>
+                    <PlotPoint point="0.50, 0.00" type="linear"/>
+                    <PlotPoint point="1.00, -1.00" type="linear"/>
+                </Curve>
+            </NoiseInfo>
+            <NoiseInfo name="Erosion" type="Terrain" noiseType="fractal" seed="285" isActive="false" scale="586" strength="1" numOctaves="4" warpStrength="500">
+                <Curve type="heightOffset">
+                    <PlotPoint point="-1.00, 0.00" type="linear"/>
+                    <PlotPoint point="-0.10, 0.00" type="linear"/>
+                    <PlotPoint point="0.10, -0.02" type="linear"/>
+                    <PlotPoint point="0.50, 0.30" type="linear"/>
+                    <PlotPoint point="1.00, 0.80" type="linear"/>
+                </Curve>
+                <Curve type="squashCurve">
+                    <PlotPoint point="-1.00, 0.00" type="linear"/>
+                    <PlotPoint point="-0.05, 0.00" type="linear"/>
+                    <PlotPoint point="0.05, 0.20" type="linear"/>
+                    <PlotPoint point="0.35, 0.20" type="linear"/>
+                    <PlotPoint point="0.45, 0.75" type="linear"/>
+                    <PlotPoint point="1.00, 0.75" type="linear"/>
+                </Curve>
+            </NoiseInfo>
+            <NoiseInfo name="Continentalness" type="Terrain" noiseType="perlin" seed="256" isActive="true" scale="2024" strength="0.064000003" numOctaves="4" warpStrength="100">
+                <Curve type="heightOffset">
+                    <PlotPoint point="-1.00, -0.60" type="smoothStart" exponent="3"/>
+                    <PlotPoint point="-0.10, -0.04" type="smoothStart" exponent="3"/>
+                    <PlotPoint point="0.10, 0.04" type="linear"/>
+                    <PlotPoint point="1.00, 0.60" type="linear"/>
+                </Curve>
+                <Curve type="squashCurve">
+                    <PlotPoint point="-1.00, 0.00" type="smoothStart" exponent="3"/>
+                    <PlotPoint point="-0.60, 0.20" type="smoothStart" exponent="3"/>
+                    <PlotPoint point="-0.20, 0.80" type="smoothStart" exponent="3"/>
+                    <PlotPoint point="0.20, 0.80" type="linear"/>
+                    <PlotPoint point="0.60, 0.20" type="linear"/>
+                    <PlotPoint point="1.00, -0.30" type="linear"/>
+                </Curve>
+            </NoiseInfo>
+            <NoiseInfo name="Base Terrain" type="Terrain" noiseType="fractal" seed="23" isActive="false" scale="570" strength="1" numOctaves="5" warpStrength="20"></NoiseInfo>
+            <NoiseInfo name="Sea Grass" type="Vegetation" noiseType="perlin" seed="129" scale="250" strength="1" numOctaves="3" warpStrength="50"/>
+            <NoiseInfo name="Kelp" type="Vegetation" noiseType="perlin" seed="150" scale="850" strength="1" numOctaves="1" warpStrength="0"/>
+            <NoiseInfo name="Sea Anemone" type="Vegetation" noiseType="perlin" seed="10" scale="150" strength="1" numOctaves="2" warpStrength="50"/>
+            <NoiseInfo name="Grass" type="Vegetation" noiseType="perlin" seed="15" scale="450" strength="1" numOctaves="1" warpStrength="10"/>
+            <NoiseInfo name="Coral" type="Vegetation" noiseType="perlin" seed="12" scale="1050" strength="1" numOctaves="1" warpStrength="20"/>
+        </Noise>
+        <TextureInfo terrainShader="Data/Shaders/Terrain">
+            <BiomeInfo biomeName="Sandy Plains">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="1" parentFolder="Data/Images/Terrain/Sand001_2K" albedo="Data/Images/Terrain/Sand001_2K/Sand001_2K_Albedo.png" normal="Data/Images/Terrain/Sand001_2K/Sand001_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Sand001_2K/Sand001_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock004_2K" albedo="Data/Images/Terrain/Rock004_2K/Rock004_2K_Albedo.png" normal="Data/Images/Terrain/Rock004_2K/Rock004_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock004_2K/Rock004_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Rocky Sand">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="1" parentFolder="Data/Images/Terrain/RockySand001_2K" albedo="Data/Images/Terrain/RockySand001_2K/RockySand001_2K_Albedo.png" normal="Data/Images/Terrain/RockySand001_2K/RockySand001_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/RockySand001_2K/RockySand001_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock003_2K" albedo="Data/Images/Terrain/Rock003_2K/Rock003_2K_Albedo.png" normal="Data/Images/Terrain/Rock003_2K/Rock003_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock003_2K/Rock003_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Coral Garden">
+                <TextureFiles floor="true" textureScale="0.0074999998" normalStrength="1" parentFolder="Data/Images/Terrain/Coral001_2K" albedo="Data/Images/Terrain/Coral001_2K/Coral001_2K_Albedo_Recolored.png" normal="Data/Images/Terrain/Coral001_2K/Coral001_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Coral001_2K/Coral001_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0074999998" parentFolder="Data/Images/Terrain/Coral001_2K" albedo="Data/Images/Terrain/Coral001_2K/Coral001_2K_Albedo_Recolored.png" normal="Data/Images/Terrain/Coral001_2K/Coral001_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Coral001_2K/Coral001_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Kelp Forest">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="1" parentFolder="Data/Images/Terrain/RockySand005_2K" albedo="Data/Images/Terrain/RockySand005_2K/RockySand005_2K_Albedo.png" normal="Data/Images/Terrain/RockySand005_2K/RockySand005_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/RockySand005_2K/RockySand005_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock006_2K" albedo="Data/Images/Terrain/Rock006_2K/Rock006_2K_Albedo.png" normal="Data/Images/Terrain/Rock006_2K/Rock006_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock006_2K/Rock006_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Smooth Rock">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="1" parentFolder="Data/Images/Terrain/Rock002_2K" albedo="Data/Images/Terrain/Rock002_2K/Rock002_2K_Albedo.png" normal="Data/Images/Terrain/Rock002_2K/Rock002_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock002_2K/Rock002_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock002_2K" albedo="Data/Images/Terrain/Rock002_2K/Rock002_2K_Albedo.png" normal="Data/Images/Terrain/Rock002_2K/Rock002_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock002_2K/Rock002_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Mossy Rock">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="0.5" parentFolder="Data/Images/Terrain/RockySand002_2K" albedo="Data/Images/Terrain/RockySand002_2K/RockySand002_2K_Albedo.png" normal="Data/Images/Terrain/RockySand002_2K/RockySand002_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/RockySand002_2K/RockySand002_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock003_2K" albedo="Data/Images/Terrain/Rock003_2K/Rock003_2K_Albedo.png" normal="Data/Images/Terrain/Rock003_2K/Rock003_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock003_2K/Rock003_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Beach">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="1" parentFolder="Data/Images/Terrain/SandyBeach001_2K" albedo="Data/Images/Terrain/SandyBeach001_2K/SandyBeach001_2K_Albedo.png" normal="Data/Images/Terrain/SandyBeach001_2K/SandyBeach001_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/SandyBeach001_2K/SandyBeach001_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock004_2K" albedo="Data/Images/Terrain/Rock004_2K/Rock004_2K_Albedo.png" normal="Data/Images/Terrain/Rock004_2K/Rock004_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock004_2K/Rock004_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Grassy Beach">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="0.5" parentFolder="Data/Images/Terrain/Grass001_2K" albedo="Data/Images/Terrain/Grass001_2K/Grass001_2K_Albedo.png" normal="Data/Images/Terrain/Grass001_2K/Grass001_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Grass001_2K/Grass001_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/Rock006_2K" albedo="Data/Images/Terrain/Rock006_2K/Rock006_2K_Albedo.png" normal="Data/Images/Terrain/Rock006_2K/Rock006_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/Rock006_2K/Rock006_2K_AO.png"/>
+            </BiomeInfo>
+            <BiomeInfo biomeName="Grassy Sand">
+                <TextureFiles floor="true" textureScale="0.0099999998" normalStrength="1" parentFolder="Data/Images/Terrain/RockySand004_2K" albedo="Data/Images/Terrain/RockySand004_2K/RockySand004_2K_Albedo.png" normal="Data/Images/Terrain/RockySand004_2K/RockySand004_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/RockySand004_2K/RockySand004_2K_AO.png"/>
+                <TextureFiles floor="false" textureScale="0.0099999998" parentFolder="Data/Images/Terrain/RockySand003_2K" albedo="Data/Images/Terrain/RockySand003_2K/RockySand003_2K_Albedo.png" normal="Data/Images/Terrain/RockySand003_2K/RockySand003_2K_Normal.png" ambientOcclusion="Data/Images/Terrain/RockySand003_2K/RockySand003_2K_AO.png"/>
+            </BiomeInfo>
+        </TextureInfo>
+        <WaterInfo waterShader="Data/Shaders/WaterSurface" normalTexture="Data/Images/Water/WaterSurface_N.jpg" foamTexture="Data/Images/Water/WaterFoamMask.png" isActive="true" underwaterTintDepthScale="0.25" underwaterDepthDarkenScale="0.69999999" numWaves="7" globalWaveSpeedScale="6" globalCrestSteepnessScale="3" globalAmplitudeScale="1" globalWavelengthScale="1" foaminess="0.27000001" mirkyness="0.2" reflectionStrength="0.5" refractionStrength="0.5" shorelineFoamStrength="0.80000001" specularIntensity="0.2" specularPower="0.25">
+            <WaveInfo directionXY="0.95, 0.15" amplitude="4" wavelength="240" speed="0.60000002" steepness="0.89999998" waveOffset="0.1"/>
+            <WaveInfo directionXY="-0.95, 0.15" amplitude="12" wavelength="640" speed="2.4000001" steepness="0.1" waveOffset="2.0999999"/>
+            <WaveInfo directionXY="-0.40, 0.70" amplitude="6.8000002" wavelength="500" speed="0.38" steepness="1" waveOffset="3.5"/>
+            <WaveInfo directionXY="0.20, -0.80" amplitude="2.4000001" wavelength="400" speed="0.80000001" steepness="0.40000001" waveOffset="1"/>
+            <WaveInfo directionXY="-0.70, -0.20" amplitude="13.6" wavelength="660" speed="0.23999999" steepness="0" waveOffset="6"/>
+            <WaveInfo directionXY="0.40, 0.50" amplitude="3" wavelength="160" speed="0.25" steepness="1" waveOffset="4.3000002"/>
+            <WaveInfo directionXY="0.89, -0.65" amplitude="0.1" wavelength="5" speed="0.66000003" steepness="0" waveOffset="4.3000002"/>
+            <WaveBreakupInfo directionVarianceRegionScale="0.69999999" amplitudeVarianceRegionScale="0.89999998" directionVariance="0.2" amplitudeVariance="0.2"/>
+        </WaterInfo>
+        <Wind>
+            <WindInfo isActive="true" type="Wind" baseSpeed="1" swirlStrength="0.30000001" warbleStrength="0.30000001" largeScale="0.94999999" largeSpeed="0.94999999" largeStrength="1" mediumScale="0.75" mediumSpeed="0.050000001" mediumStrength="0.30000001" smallScale="0.64999998" smallSpeed="0.090000004" smallStrength="0.1"/>
+            <WindInfo isActive="true" type="Underwater Current" baseSpeed="0.60000002" swirlStrength="0.60000002" warbleStrength="0.1" largeScale="0.99000001" largeSpeed="0.69999999" largeStrength="1" mediumScale="0.75" mediumSpeed="0.5" mediumStrength="0.38" smallScale="0.64999998" smallSpeed="0.029999999" smallStrength="0.050000001"/>
+        </Wind>
+        <SunInfo orientation="45.00, 45.00, 0.00" intensity="1" ambientIntensity="0.5" color="255,255,220,255"/>
+        <CausticsInfo isActive="true" intensity="1" depthFadeRate="0.15000001" warpSpeed="0.60000002" warpStrength="0.050000001" lineThickness="3" rippleSpeed="1" rippleStrength="0.15000001"/>
+        <LightRayInfo isActive="true" maskShader="Data/Shaders/LightRayMask_PostProcess" volumeComputeShader="Data/Shaders/Compute_LightRayVolume" shaftIntensity="0.25" shaftScale="1" shaftSpread="1" shaftWarpSpeed="0.27000001" shaftWarpStrength="0.07" shaftDepthFade="0.15000001" shaftContrast="0.5" shaftColor="191,230,255,255" maxNumRaySteps="128"/>
+        <ParticleInfo isActive="true" density="0.114" cellSize="0.5" particlesPerCell="5" driftSpeed="0.63999999" intensity="0.27000001" depthFade="0.064000003" sizeRange="0.01~0.18"/>
+        <FogInfo fogShader="Data/Shaders/Fog_PostProcess" isActive="true" fogVolumeHeight="400">
+            <FogType type="underwater" depth="55" opacity="1" transition="8" color="50,170,200,255"/>
+            <FogType type="aboveSurface" depth="200" opacity="1" transition="5" color="180,210,251,255"/>
+        </FogInfo>
+        <Fish isActive="true" maxFish="500" maxNeighborsToCheckPerFrame="12">
+            <FishInfo type="AngelFish" isActive="true" meshInfo="Data/Models/AngelFish" maxNumber="175" spawnThickness="50" maxSpeed="35" maxTurnSpeed="10" flockingRadius="80" separationRadius="20" playerFlockingRadius="500" playerSeparationRadius="35" probeDistance="10" terrainAvoidance="1" cohesion="0.75" alignment="0.5" separation="0.64999998" minOceanDepth="25" playerCohesion="0.75" playerSeparation="1"/>
+            <FishInfo type="Chromis" isActive="true" meshInfo="Data/Models/Chromis" maxNumber="75" spawnThickness="25" maxSpeed="45" maxTurnSpeed="10" flockingRadius="50" separationRadius="10" playerFlockingRadius="500" playerSeparationRadius="35" probeDistance="7" terrainAvoidance="1" cohesion="0.30000001" alignment="0.25" separation="0.5" minOceanDepth="25" playerCohesion="0.64999998" playerSeparation="1"/>
+            <FishInfo type="Shark" isActive="true" meshInfo="Data/Models/Shark" maxNumber="3" spawnThickness="1" maxSpeed="40" maxTurnSpeed="7" flockingRadius="100" separationRadius="30" playerFlockingRadius="500" playerSeparationRadius="50" probeDistance="15" terrainAvoidance="1" cohesion="0.5" alignment="0.050000001" separation="0.5" minOceanDepth="30" playerCohesion="0.44999999" playerSeparation="1"/>
+        </Fish>
+        <Vegetation isActive="true" coralClusterThickness="0.80000001" coralBlendStrength="1" coralBlendDepthThreshold="0.40000001" coralBlendRadius="0.07" coralBlendShader="Data/Shaders/CoralBlend_PostProcess">
+            <VegetationInfo type="Sea Grass" isActive="true" worldDotUpThreshold="0.85000002" thickness="1" texture="Data/Images/Vegetation/Grass/GrassBlade.jpg" graphicsShader="Data/Shaders/SeaGrass" computeShader="Data/Shaders/SeaGrassCompute" height="5.00~15.00" width="2.00~7.00" rigidity="0.2" emissiveStrength="1"/>
+            <VegetationInfo type="Kelp" isActive="true" worldDotUpThreshold="0.99900001" thickness="0.60000002" graphicsShader="Data/Shaders/Kelp" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Kelp" height="100.00~200.00" width="10.00~20.00" rigidity="0.5" emissiveStrength="0.5"/>
+            <VegetationInfo type="Sea Anemone" isActive="true" worldDotUpThreshold="0.89999998" thickness="1" texture="Data/Images/Vegetation/SeaAnemone/SeaAnemone_Normal.jpg" graphicsShader="Data/Shaders/SeaAnenome" computeShader="Data/Shaders/SeaAnenomeCompute" height="2.00~7.00" width="1.20~2.00" rigidity="0" emissiveStrength="1"/>
+            <VegetationInfo type="Grass" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" texture="Data/Images/Vegetation/Grass/GrassBlade.jpg" graphicsShader="Data/Shaders/SeaGrass" computeShader="Data/Shaders/SeaGrassCompute" height="1.00~6.00" width="2.00~3.00" rigidity="0.25" emissiveStrength="1"/>
+            <VegetationInfo type="Coral Mushroom" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/MushroomCoral" scale="0.50~2.00" rigidity="1" emissiveStrength="5.1500001"/>
+            <VegetationInfo type="Coral Blue Mushroom 01" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/BlueMushroomCoral_01" scale="0.50~2.00" rigidity="1" emissiveStrength="1.15"/>
+            <VegetationInfo type="Coral Blue Mushroom 02" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/BlueMushroomCoral_02" scale="0.50~2.00" rigidity="1" emissiveStrength="1.15"/>
+            <VegetationInfo type="Coral Elk Horn" isActive="true" worldDotUpThreshold="0.69999999" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/ElkhornCoral" scale="0.50~2.00" rigidity="1" emissiveStrength="2.9000001"/>
+            <VegetationInfo type="Coral Brain" isActive="true" worldDotUpThreshold="0.89999998" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/BrainCoral" scale="0.50~2.00" rigidity="1" emissiveStrength="0.89999998"/>
+            <VegetationInfo type="Coral Tube Sponge 01" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/TubeSpongeCoral_01" scale="0.50~1.00" rigidity="1" emissiveStrength="2"/>
+            <VegetationInfo type="Coral Tube Sponge 02" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/TubeSpongeCoral_02" scale="0.50~1.00" rigidity="1" emissiveStrength="2"/>
+            <VegetationInfo type="Coral Tube Sponge 03" isActive="true" worldDotUpThreshold="0.85000002" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/TubeSpongeCoral_03" scale="0.50~1.00" rigidity="1" emissiveStrength="2"/>
+            <VegetationInfo type="Coral Lettuce 01" isActive="true" worldDotUpThreshold="0.69999999" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/LettuceCoral_01" scale="0.50~2.00" rigidity="1" emissiveStrength="2"/>
+            <VegetationInfo type="Coral Lettuce 02" isActive="true" worldDotUpThreshold="0.69999999" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/LettuceCoral_02" scale="0.50~2.00" rigidity="1" emissiveStrength="2"/>
+            <VegetationInfo type="Coral Lettuce 03" isActive="true" worldDotUpThreshold="0.69999999" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/LettuceCoral_03" scale="0.50~2.00" rigidity="1" emissiveStrength="2"/>
+            <VegetationInfo type="Coral Pine Cone 01" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/PineConeCoral_01" scale="0.50~1.00" rigidity="1" emissiveStrength="1"/>
+            <VegetationInfo type="Coral Pine Cone 02" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/PineConeCoral_02" scale="0.50~2.00" rigidity="1" emissiveStrength="1"/>
+            <VegetationInfo type="Coral Squash" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/SquashCoral" scale="1.00~2.00" rigidity="1" emissiveStrength="1"/>
+            <VegetationInfo type="Coral Sea Fan 01" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/SeaFanCoral_01" scale="0.50~3.00" rigidity="1" emissiveStrength="5"/>
+            <VegetationInfo type="Coral Sea Fan 02" isActive="true" worldDotUpThreshold="0.80000001" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/SeaFanCoral_02" scale="0.50~3.00" rigidity="1" emissiveStrength="5"/>
+            <VegetationInfo type="Coral Branching 01" isActive="true" worldDotUpThreshold="0.64999998" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/BranchingCoral_01" scale="0.50~2.00" rigidity="1" emissiveStrength="3.7"/>
+            <VegetationInfo type="Coral Branching 02" isActive="true" worldDotUpThreshold="0.64999998" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/BranchingCoral_02" scale="0.50~2.00" rigidity="1" emissiveStrength="3.7"/>
+            <VegetationInfo type="Coral Stub" isActive="true" worldDotUpThreshold="0.89999998" thickness="1" graphicsShader="Data/Shaders/Coral" computeShader="Data/Shaders/Compute_Coral" meshInfo="Data/Models/Coral/StubCoral" scale="0.50~2.00" rigidity="1" emissiveStrength="1"/>
+        </Vegetation>
+    </WorldDefinition>
+</Definitions>

@@ -1,0 +1,17 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap,specularMap, emissiveMap"
+	objFile ="Data/Models/Coral/SeaFanCoral_02/Coral_SeaFan_02.obj"
+	diffuseMap = "Data/Models/Coral/Textures/Corals_3_6_diff.png"
+	normalMap = "Data/Models/Coral/Textures/Corals_3_6_normal.png"
+	specularMap ="Data/Models/Coral/Textures/Corals_3_6_gloss.png"
+	emissiveMap ="Data/Models/Coral/Textures/Corals_3_6_illum.png"
+	shader = "Data/Shaders/Coral"
+	unitsPerMeter = "5"
+	x="forward"
+	y="left"
+	z="up"
+	translation = "0,0,0"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	

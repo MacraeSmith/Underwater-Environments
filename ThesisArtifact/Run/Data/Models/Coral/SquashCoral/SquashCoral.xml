@@ -1,0 +1,17 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap,specularMap, emissiveMap"
+	objFile ="Data/Models/Coral/SquashCoral/Coral_Squash.obj"
+	diffuseMap = "Data/Models/Coral/Textures/Corals_1_5_8_9_diff.png"
+	normalMap = "Data/Models/Coral/Textures/Corals_1_5_8_9_normal.png"
+	specularMap ="Data/Models/Coral/Textures/Corals_1_5_8_9_gloss.png"
+	emissiveMap ="Data/Models/Coral/Textures/Corals_1_5_8_9_illum.png"
+	shader = "Data/Shaders/Coral"
+	unitsPerMeter = "20"
+	x="forward"
+	y="left"
+	z="up"
+	translation = "0,0,0"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	

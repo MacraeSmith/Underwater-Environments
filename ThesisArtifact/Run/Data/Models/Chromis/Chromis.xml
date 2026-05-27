@@ -1,0 +1,15 @@
+<StaticModelInfo
+	textureMaps ="diffuseMap,normalMap"
+	objFile ="Data/Models/Chromis/Chromis.obj"
+	diffuseMap = "Data/Models/Chromis/Chromis_Diffuse.jpg"
+	normalMap = "Data/Models/Chromis/Chromis_Normal.png"
+	shader = "Data/Shaders/Fish"
+	unitsPerMeter = "2.0" 
+	x="left"
+	y="backward"
+	z="up"
+	translation = "-1,0,-1.5"
+	triangleWinding ="CounterClockwise"
+	
+	/>
+	
