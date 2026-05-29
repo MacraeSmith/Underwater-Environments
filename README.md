@@ -40,9 +40,7 @@ For a detailed breakdown of the architecture, rendering systems, procedural gene
 
 ### Launch Prebuilt Executable
 
-```text
-ThesisArtifact/Run/ThesisArtifact_Release_x64.exe
-```
+```ThesisArtifact/Run/ThesisArtifact_Release_x64.exe```
 
 ### Build From Source
 
@@ -50,8 +48,8 @@ ThesisArtifact/Run/ThesisArtifact_Release_x64.exe
 
 2. Configure the debugger settings:
 
-   * Right-click the **ThesisArtifact** project and select **Properties**
-   * Navigate to **Configuration Properties > Debugging**
+   * Right-click the ```ThesisArtifact``` project and select ```Properties```
+   * Navigate to ```Configuration Properties > Debugging```
    * Set:
 
    ```text
