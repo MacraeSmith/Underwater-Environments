@@ -46,7 +46,7 @@ ThesisArtifact/Run/ThesisArtifact_Release_x64.exe
 
 ### Build From Source
 
-1. Open `ThesisArtiface/ThesisArtifact.sln` in Visual Studio 2022.
+1. Open `ThesisArtifact/ThesisArtifact.sln` in Visual Studio 2022.
 
 2. Configure the debugger settings:
 
